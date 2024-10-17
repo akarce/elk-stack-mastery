@@ -1,0 +1,8 @@
+cluster.name: elktestcluster
+node.name: elktest3
+node.roles: ["data_frozen"]
+path.data: /var/lib/elasticsearch
+path.logs: /var/log/elasticsearch
+network.host: 0.0.0.0
+http.port: 9200
+xpack.searchable.snapshot.shared_cache.size: 30%

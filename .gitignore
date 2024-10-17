@@ -1,0 +1,15 @@
+# Ignore Elasticsearch data directory
+data/
+
+# Ignore log files
+*.log
+
+# Ignore configuration files with sensitive information
+*_secure.yml
+
+# Ignore temporary files
+*.tmp
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db

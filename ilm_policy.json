@@ -1,0 +1,38 @@
+{
+    "policy": {
+      "phases": {
+        "hot": {
+          "actions": {
+            "rollover": {
+              "max_size": "40gb",
+              "max_age": "10d"
+            }
+          }
+        },
+        "warm": {
+          "min_age": "10d",
+          "actions": {
+            "forcemerge": {
+              "max_num_segments": 1
+            },
+            "allocate": {
+              "require": {
+                "data": "cold"
+              }
+            }
+          }
+        },
+        "cold": {
+          "min_age": "20d",
+          "actions": {
+            "freeze": {},
+            "allocate": {
+              "require": {
+                "data": "frozen"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
