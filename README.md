@@ -1,5 +1,9 @@
 # ELK Stack Mastery: Building a Scalable Log Management System
 
+## Youtube Tutorial
+[![Watch the tutorial](https://img.youtube.com/vi/U1i5sIZzEQM/0.jpg)](https://youtu.be/U1i5sIZzEQM)
+
+
 ## Overview
 
 This project sets up an Elastic Cluster with 3 nodes using Virtualbox virtual machines. It includes the setup of Elasticsearch, Logstash, and Kibana (ELK stack) for log management and analysis.
